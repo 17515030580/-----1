@@ -1,0 +1,6 @@
+{
+  "name": "sigmoid",
+  "formula": "1/(1+exp(-0.1*x))",
+  "inverse_formula": "10*ln(y/(1-y))",
+  "ranking_direction": "ascending"
+}

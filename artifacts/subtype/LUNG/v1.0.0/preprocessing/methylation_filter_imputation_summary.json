@@ -1,0 +1,22 @@
+{
+  "input_shape": [
+    823,
+    486427
+  ],
+  "missingness_scope": "all_records",
+  "dataset_split_before_imputation": false,
+  "missing_threshold": 0.1,
+  "deletion_rule": "delete if missing_rate > 0.1",
+  "retention_rule": "keep if missing_rate <= 0.1",
+  "original_cpg_count": 486427,
+  "kept_cpg_count": 402390,
+  "dropped_cpg_count": 84037,
+  "imputation": "CpG-specific median from all non-missing records",
+  "final_shape": [
+    823,
+    402390
+  ],
+  "final_dtype": "float32",
+  "final_nan_count": 0,
+  "kpca_applied": false
+}

@@ -1,0 +1,23 @@
+{
+  "model_class": "MTEGDRP",
+  "task": "cancer_subtype_classification",
+  "cohort": "KIDNEY",
+  "num_classes": 3,
+  "init_kwargs": {
+    "output_dim": 3,
+    "num_features_xd": 78,
+    "ge_features_dim": 128,
+    "num_features_xt": 25,
+    "embed_dim": 128,
+    "mut_feature_dim": 128,
+    "meth_feature_dim": 128,
+    "connect_dim": 128,
+    "dropout": 0.2
+  },
+  "input": {
+    "expression_kpca_dim": 128,
+    "mutation_kpca_dim": 128,
+    "methylation_kpca_dim": 128
+  },
+  "output": "classification_logits"
+}

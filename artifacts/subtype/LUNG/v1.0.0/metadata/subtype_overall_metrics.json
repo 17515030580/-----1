@@ -1,0 +1,11 @@
+{
+  "cohort": "LUNG",
+  "test_cross_entropy_loss": 0.4261600077152252,
+  "accuracy": 0.8333333333333334,
+  "macro_f1": 0.8309373202990225,
+  "auc": 0.8726851851851851,
+  "best_epoch": 4,
+  "best_val_cross_entropy_loss": 0.5181995034217834,
+  "test_sample_count": 42,
+  "num_classes": 2
+}

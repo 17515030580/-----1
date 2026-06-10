@@ -1,0 +1,14 @@
+{
+  "model_version": "drug_response_model_v1.0.0",
+  "preprocessing_version": "drug_response_preprocessing_v1.0.0",
+  "dataset": "GDSC",
+  "sample_count": 5841,
+  "rmse": 0.02935419039249251,
+  "mse": 0.0008616684935986996,
+  "pearson": 0.9034292646277209,
+  "spearman": 0.8862023257491235,
+  "r2": 0.803429610156057,
+  "mae": 0.022727444767951965,
+  "original_ic50_mae": 0.9348256430340873,
+  "original_ic50_rmse": 1.2095179150206197
+}

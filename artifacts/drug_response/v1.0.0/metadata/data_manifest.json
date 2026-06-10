@@ -1,0 +1,28 @@
+{
+  "preprocessing_version": "drug_response_preprocessing_v1.0.0",
+  "required_omics": [
+    "expression",
+    "mutation",
+    "methylation"
+  ],
+  "common_model_count": 589,
+  "valid_drug_count": 231,
+  "valid_drug_cell_pair_count": 116810,
+  "split_counts": {
+    "train": 105129,
+    "test": 5841,
+    "validation": 5840
+  },
+  "ic50_transform": {
+    "name": "sigmoid",
+    "formula": "1/(1+exp(-0.1*x))",
+    "inverse_formula": "10*ln(y/(1-y))",
+    "ranking_direction": "ascending"
+  },
+  "kpca": {
+    "n_components": 128,
+    "kernel": "poly",
+    "gamma": 131,
+    "random_state": 42
+  }
+}

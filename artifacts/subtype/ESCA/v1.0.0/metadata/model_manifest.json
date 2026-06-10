@@ -1,0 +1,55 @@
+{
+  "model_name": "MTEGDRP",
+  "task": "cancer_subtype_classification",
+  "cohort": "ESCA",
+  "artifact_version": "v1.0.0",
+  "generated_at": "2026-08-11T16:51:25.636521+08:00",
+  "num_classes": 2,
+  "label_map": {
+    "EAC": 0,
+    "ESCC": 1
+  },
+  "best_epoch": 56,
+  "best_val_cross_entropy_loss": 0.16297274827957153,
+  "training_parameters": {
+    "train_batch": 128,
+    "val_batch": 128,
+    "test_batch": 128,
+    "learning_rate": 0.001,
+    "num_epoch_requested": 100,
+    "amp_requested": false
+  },
+  "dataset_info": {
+    "cohort": "ESCA",
+    "cohort_directory": "TCGA-ESCA",
+    "standard_data_directory": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-ESCA_standard",
+    "sample_count": 181,
+    "num_classes": 2,
+    "label_map": {
+      "EAC": 0,
+      "ESCC": 1
+    },
+    "kpca": {
+      "n_components": 128,
+      "kernel": "poly",
+      "gamma": 131,
+      "random_state": 42
+    },
+    "split": {
+      "train_count": 162,
+      "val_count": 9,
+      "test_count": 10,
+      "ratio": "0.90/0.05/0.05"
+    }
+  },
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "1.10.2+cu113",
+    "numpy": "1.24.3",
+    "pandas": "2.0.3",
+    "scikit_learn": "1.3.2",
+    "device_used_for_export": "cuda:0"
+  },
+  "model_state_sha256": "52a0e49aa3a946f29adbfd980fc59f106f2fa053515557d66d482e0cf60674d0",
+  "note": "This manifest records the already-trained model and its evaluation outputs. No model architecture, forward path, loss, optimizer, or training rule is changed by export."
+}

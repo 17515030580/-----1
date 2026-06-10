@@ -1,0 +1,10 @@
+{
+  "method": "data_distribution_quantile_rule",
+  "note": "该等级反映历史训练样本量与测试误差，不是临床置信概率。",
+  "thresholds": {
+    "training_sample_count_q33": 454.0,
+    "training_sample_count_q67": 496.0,
+    "test_mae_q33": 0.018943627576837655,
+    "test_mae_q67": 0.02406016481774194
+  }
+}

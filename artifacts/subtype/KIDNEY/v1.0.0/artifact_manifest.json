@@ -1,0 +1,27 @@
+{
+  "cohort": "KIDNEY",
+  "artifact_version": "v1.0.0",
+  "required_for_inference": [
+    "model/model_state.pt",
+    "preprocessing/expression_features.json",
+    "preprocessing/mutation_features.json",
+    "preprocessing/methylation_features.json",
+    "preprocessing/expression_kpca.pkl",
+    "preprocessing/mutation_kpca.pkl",
+    "preprocessing/methylation_kpca.pkl",
+    "metadata/subtype_label_map.json",
+    "metadata/class_id_to_subtype.json",
+    "metadata/model_config.json"
+  ],
+  "for_frontend_or_audit": [
+    "metadata/subtype_overall_metrics.json",
+    "metadata/subtype_class_metrics.csv",
+    "metadata/subtype_test_predictions.csv",
+    "metadata/training_history.csv",
+    "metadata/model_manifest.json",
+    "metadata/preprocessing_manifest.json"
+  ],
+  "explicitly_not_generated": [
+    "subtype_confusion_matrix.csv"
+  ]
+}

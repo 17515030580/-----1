@@ -1,0 +1,3 @@
+class_id,subtype,sample_count,precision,recall,f1,auc_ovr
+0,Endometrioid,16,0.8,1.0,0.888888888888889,0.6875
+1,Serous,4,0.0,0.0,0.0,0.6875

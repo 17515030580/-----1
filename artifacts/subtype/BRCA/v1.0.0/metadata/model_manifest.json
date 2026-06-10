@@ -1,0 +1,55 @@
+{
+  "model_name": "MTEGDRP",
+  "task": "cancer_subtype_classification",
+  "cohort": "BRCA",
+  "artifact_version": "v1.0.0",
+  "generated_at": "2026-08-11T16:48:21.390177+08:00",
+  "num_classes": 2,
+  "label_map": {
+    "IDC": 0,
+    "ILC": 1
+  },
+  "best_epoch": 2,
+  "best_val_cross_entropy_loss": 0.6334267854690552,
+  "training_parameters": {
+    "train_batch": 128,
+    "val_batch": 128,
+    "test_batch": 128,
+    "learning_rate": 0.001,
+    "num_epoch_requested": 100,
+    "amp_requested": false
+  },
+  "dataset_info": {
+    "cohort": "BRCA",
+    "cohort_directory": "TCGA-BRCA",
+    "standard_data_directory": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-BRCA_standard",
+    "sample_count": 596,
+    "num_classes": 2,
+    "label_map": {
+      "IDC": 0,
+      "ILC": 1
+    },
+    "kpca": {
+      "n_components": 128,
+      "kernel": "poly",
+      "gamma": 131,
+      "random_state": 42
+    },
+    "split": {
+      "train_count": 536,
+      "val_count": 30,
+      "test_count": 30,
+      "ratio": "0.90/0.05/0.05"
+    }
+  },
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "1.10.2+cu113",
+    "numpy": "1.24.3",
+    "pandas": "2.0.3",
+    "scikit_learn": "1.3.2",
+    "device_used_for_export": "cuda:0"
+  },
+  "model_state_sha256": "30d2f7b7808409a5399767bda5fd2aeabd7d3779bb2545aad22e2e4d623c12a3",
+  "note": "This manifest records the already-trained model and its evaluation outputs. No model architecture, forward path, loss, optimizer, or training rule is changed by export."
+}

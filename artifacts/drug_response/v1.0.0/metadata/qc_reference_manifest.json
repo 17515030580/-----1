@@ -1,0 +1,19 @@
+{
+  "preprocessing_version": "drug_response_preprocessing_v1.0.0",
+  "required_modalities": [
+    "expression",
+    "mutation",
+    "methylation"
+  ],
+  "require_all_three_modalities": true,
+  "feature_counts": {
+    "expression": 16378,
+    "mutation": 19394,
+    "methylation": 377
+  },
+  "final_embedding_dimensions": {
+    "expression": 128,
+    "mutation": 128,
+    "methylation": 128
+  }
+}

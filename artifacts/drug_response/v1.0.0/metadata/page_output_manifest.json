@@ -1,0 +1,42 @@
+{
+  "omics_quality_control": [
+    "metadata/qc_reference_manifest.json",
+    "preprocessing/expression_features.json",
+    "preprocessing/mutation_features.json",
+    "preprocessing/methylation_features.json",
+    "reference/expression_feature_reference.csv",
+    "reference/mutation_feature_reference.csv",
+    "reference/methylation_feature_reference.csv"
+  ],
+  "top10_and_all_drugs": [
+    "drugs/drug_catalog.csv",
+    "drugs/drug_graphs.pkl",
+    "Result_export.py:save_patient_drug_predictions"
+  ],
+  "single_drug_ic50_distribution": [
+    "drugs/drug_ic50_statistics.csv",
+    "reference/drug_ic50_history.csv"
+  ],
+  "single_drug_test_performance": [
+    "drugs/drug_test_predictions.csv",
+    "drugs/drug_performance.csv"
+  ],
+  "drug_structure_detail": [
+    "drugs/drug_catalog.csv",
+    "drugs/drug_images/*.svg"
+  ],
+  "prediction_reliability": [
+    "drugs/drug_reliability_reference.csv",
+    "metadata/reliability_rule.json"
+  ],
+  "model_traceability": [
+    "metadata/model_manifest.json",
+    "metadata/data_manifest.json",
+    "metadata/training_history.csv",
+    "metadata/test_metrics.json"
+  ],
+  "subtype_result_functions": [
+    "Result_export.py:save_subtype_prediction",
+    "Result_export.py:save_subtype_evaluation"
+  ]
+}

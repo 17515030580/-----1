@@ -1,0 +1,7 @@
+{
+  "drug_catalog_csv": "../drugs/drug_catalog.csv",
+  "drug_ic50_statistics_csv": "../drugs/drug_ic50_statistics.csv",
+  "drug_ic50_history_csv": "../reference/drug_ic50_history.csv",
+  "data_manifest_json": "../metadata/data_manifest.json",
+  "qc_reference_manifest_json": "../metadata/qc_reference_manifest.json"
+}

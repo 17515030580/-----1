@@ -1,0 +1,9 @@
+{
+  "test_predictions_csv": "../drugs/drug_test_predictions.csv",
+  "test_predictions_json": "../drugs/drug_test_predictions.json",
+  "drug_performance_csv": "../drugs/drug_performance.csv",
+  "drug_performance_json": "../drugs/drug_performance.json",
+  "drug_reliability_csv": "../drugs/drug_reliability_reference.csv",
+  "test_metrics_csv": "../metadata/test_metrics.csv",
+  "test_metrics_json": "../metadata/test_metrics.json"
+}

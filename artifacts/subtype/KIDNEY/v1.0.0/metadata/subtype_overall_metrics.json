@@ -1,0 +1,11 @@
+{
+  "cohort": "KIDNEY",
+  "test_cross_entropy_loss": 0.426639586687088,
+  "accuracy": 0.8666666666666667,
+  "macro_f1": 0.8486772486772486,
+  "auc": 0.9464285714285715,
+  "best_epoch": 25,
+  "best_val_cross_entropy_loss": 0.47046008706092834,
+  "test_sample_count": 30,
+  "num_classes": 3
+}
