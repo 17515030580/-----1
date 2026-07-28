@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+.pytest_cache/
+runtime_results/*
+!runtime_results/.gitkeep
+artifacts/**/model/*.pt
+artifacts/**/preprocessing/*.pkl
+artifacts/**/drugs/*.pkl
