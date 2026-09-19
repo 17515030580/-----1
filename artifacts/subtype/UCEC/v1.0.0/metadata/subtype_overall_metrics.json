@@ -1,11 +1,11 @@
 {
   "cohort": "UCEC",
-  "test_cross_entropy_loss": 0.4521104693412781,
+  "test_cross_entropy_loss": 0.37738144397735596,
   "accuracy": 0.8,
-  "macro_f1": 0.4444444444444445,
-  "auc": 0.6875,
-  "best_epoch": 27,
-  "best_val_cross_entropy_loss": 0.40953412652015686,
+  "macro_f1": 0.7619047619047619,
+  "auc": 0.8666666666666667,
+  "best_epoch": 53,
+  "best_val_cross_entropy_loss": 0.12605814635753632,
   "test_sample_count": 20,
   "num_classes": 2
 }

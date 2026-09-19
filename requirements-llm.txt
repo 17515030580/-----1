@@ -1,0 +1,2 @@
+# Existing API/model pins stay unchanged. Install only for the assistant.
+openai>=1.0,<2.0

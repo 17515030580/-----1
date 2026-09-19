@@ -1,11 +1,11 @@
 {
   "cohort": "BRCA",
-  "test_cross_entropy_loss": 0.4464125633239746,
-  "accuracy": 0.9,
-  "macro_f1": 0.4736842105263158,
-  "auc": 0.6172839506172839,
+  "test_cross_entropy_loss": 0.5080155730247498,
+  "accuracy": 0.8666666666666667,
+  "macro_f1": 0.4642857142857143,
+  "auc": 0.36538461538461536,
   "best_epoch": 2,
-  "best_val_cross_entropy_loss": 0.6334267854690552,
+  "best_val_cross_entropy_loss": 0.6860095858573914,
   "test_sample_count": 30,
   "num_classes": 2
 }

@@ -3,26 +3,26 @@
   "task": "cancer_subtype_classification",
   "cohort": "LUNG",
   "artifact_version": "v1.0.0",
-  "generated_at": "2026-08-11T16:49:25.434139+08:00",
+  "generated_at": "2026-09-13T22:15:39.124226+08:00",
   "num_classes": 2,
   "label_map": {
     "LUAD": 0,
     "LUSC": 1
   },
-  "best_epoch": 4,
-  "best_val_cross_entropy_loss": 0.5181995034217834,
+  "best_epoch": 109,
+  "best_val_cross_entropy_loss": 0.10519947856664658,
   "training_parameters": {
     "train_batch": 128,
     "val_batch": 128,
     "test_batch": 128,
     "learning_rate": 0.001,
-    "num_epoch_requested": 100,
+    "num_epoch_requested": 200,
     "amp_requested": false
   },
   "dataset_info": {
     "cohort": "LUNG",
     "cohort_directory": "TCGA_LUNG_LUAD_LUSC",
-    "standard_data_directory": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA_LUNG_LUAD_LUSC_standard",
+    "standard_data_directory": "/home/jlu/TCGA/PROCESSED_DATA/TCGA_LUNG_LUAD_LUSC_standard",
     "sample_count": 823,
     "num_classes": 2,
     "label_map": {
@@ -44,12 +44,12 @@
   },
   "runtime": {
     "python": "3.8.20",
-    "torch": "1.10.2+cu113",
+    "torch": "1.10.2",
     "numpy": "1.24.3",
     "pandas": "2.0.3",
     "scikit_learn": "1.3.2",
-    "device_used_for_export": "cuda:0"
+    "device_used_for_export": "cuda:6"
   },
-  "model_state_sha256": "c828be366d13a5096bd62fcf6fd1f9a14b4c1f409bef8f355efc98bcaafec576",
+  "model_state_sha256": "06b0824acc2cb240060864e2fcd7584455a96fa48acd181891f97a496d2b19d8",
   "note": "This manifest records the already-trained model and its evaluation outputs. No model architecture, forward path, loss, optimizer, or training rule is changed by export."
 }

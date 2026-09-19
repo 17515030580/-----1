@@ -2,8 +2,8 @@
   "task": "cancer_subtype_classification",
   "cohort": "BRCA",
   "artifact_version": "v1.0.0",
-  "generated_at": "2026-08-11T16:46:36.783821+08:00",
-  "standard_data_directory": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-BRCA_standard",
+  "generated_at": "2026-09-13T22:00:52.816317+08:00",
+  "standard_data_directory": "/home/jlu/TCGA/PROCESSED_DATA/TCGA-BRCA_standard",
   "input_shapes": {
     "expression": [
       596,
@@ -42,9 +42,9 @@
     "python_random_seed_fixed_in_current_code": false
   },
   "methylation_reference_files_copied_from_preprocessing": {
-    "methylation_cpg_medians.npy": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_cpg_medians.npy",
-    "methylation_kept_cpgs_and_medians.tsv": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_kept_cpgs_and_medians.tsv",
-    "methylation_filter_imputation_summary.json": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_filter_imputation_summary.json"
+    "methylation_cpg_medians.npy": "/home/jlu/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_cpg_medians.npy",
+    "methylation_kept_cpgs_and_medians.tsv": "/home/jlu/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_kept_cpgs_and_medians.tsv",
+    "methylation_filter_imputation_summary.json": "/home/jlu/TCGA/PROCESSED_DATA/TCGA-BRCA_standard/methylation_processed/methylation_filter_imputation_summary.json"
   },
   "note": "These artifacts record the preprocessing already used by the current code. No model architecture, loss, optimizer, training split rule, or KPCA parameter is changed."
 }

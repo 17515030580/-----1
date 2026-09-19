@@ -1,11 +1,11 @@
 {
   "cohort": "ESCA",
-  "test_cross_entropy_loss": 0.7659384608268738,
-  "accuracy": 0.8,
-  "macro_f1": 0.7916666666666665,
-  "auc": 0.8,
-  "best_epoch": 56,
-  "best_val_cross_entropy_loss": 0.16297274827957153,
+  "test_cross_entropy_loss": 0.3174765706062317,
+  "accuracy": 0.9,
+  "macro_f1": 0.898989898989899,
+  "auc": 1.0,
+  "best_epoch": 4,
+  "best_val_cross_entropy_loss": 0.5482332110404968,
   "test_sample_count": 10,
   "num_classes": 2
 }

@@ -3,26 +3,26 @@
   "task": "cancer_subtype_classification",
   "cohort": "UCEC",
   "artifact_version": "v1.0.0",
-  "generated_at": "2026-08-11T16:52:11.459054+08:00",
+  "generated_at": "2026-09-13T22:26:37.813345+08:00",
   "num_classes": 2,
   "label_map": {
     "Endometrioid": 0,
     "Serous": 1
   },
-  "best_epoch": 27,
-  "best_val_cross_entropy_loss": 0.40953412652015686,
+  "best_epoch": 53,
+  "best_val_cross_entropy_loss": 0.12605814635753632,
   "training_parameters": {
     "train_batch": 128,
     "val_batch": 128,
     "test_batch": 128,
     "learning_rate": 0.001,
-    "num_epoch_requested": 100,
+    "num_epoch_requested": 200,
     "amp_requested": false
   },
   "dataset_info": {
     "cohort": "UCEC",
     "cohort_directory": "TCGA-UCEC",
-    "standard_data_directory": "/root/autodl-tmp/TCGA/PROCESSED_DATA/TCGA-UCEC_standard",
+    "standard_data_directory": "/home/jlu/TCGA/PROCESSED_DATA/TCGA-UCEC_standard",
     "sample_count": 395,
     "num_classes": 2,
     "label_map": {
@@ -44,12 +44,12 @@
   },
   "runtime": {
     "python": "3.8.20",
-    "torch": "1.10.2+cu113",
+    "torch": "1.10.2",
     "numpy": "1.24.3",
     "pandas": "2.0.3",
     "scikit_learn": "1.3.2",
-    "device_used_for_export": "cuda:0"
+    "device_used_for_export": "cuda:6"
   },
-  "model_state_sha256": "29f88b012aa18aff695e8fa69ef7241629b5aea2652a87c8975daa3b78ae4b88",
+  "model_state_sha256": "8c0ade38e3d5f0997f29207a5a1b3c3e4fe5d77d3fa92221cefa73e8d147b3ab",
   "note": "This manifest records the already-trained model and its evaluation outputs. No model architecture, forward path, loss, optimizer, or training rule is changed by export."
 }

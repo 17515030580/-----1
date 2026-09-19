@@ -5,12 +5,16 @@ from typing import Optional
 
 from fastapi import APIRouter, File, Form, Request, UploadFile
 from fastapi.responses import FileResponse
+from fastapi.concurrency import run_in_threadpool
+from pydantic import BaseModel, validator
 
 from app.config import get_settings
 from app.core.exceptions import ArtifactError, InputValidationError
 from app.services.input_parser import build_raw_sample, parse_omics_csv
 from app.adapters.subtype_adapter import normalize_cancer_type
 from app.services.upload_service import read_upload_limited
+from app.services.llm_service import ask_llm
+from app.utils.prediction_id import normalize_prediction_id
 
 router = APIRouter()
 
@@ -100,3 +104,33 @@ async def drug_structure(request: Request, drug_id: str):
         raise ArtifactError("药敏模型或药物目录尚未加载。")
     path = registry.drug.structure_image_path(drug_id)
     return FileResponse(path=str(path), media_type="image/svg+xml", filename=path.name)
+
+
+# ---------- 以下为新增的 DeepSeek 问答接口 ----------
+
+class AskRequest(BaseModel):
+    question: str
+    prediction_id: Optional[str] = None
+
+    @validator("prediction_id", pre=True)
+    def canonical_prediction_id(cls, value):
+        return normalize_prediction_id(value)
+
+    @validator("question")
+    def nonempty_question(cls, value):
+        value = value.strip()
+        if not value:
+            raise ValueError("问题不能为空。")
+        return value
+
+
+@router.post("/ask")
+async def ask(req: AskRequest, request: Request):
+    """
+    用户提问，后端调用 DeepSeek 回答。
+    如果传入了 prediction_id，后端会读取对应预测结果作为上下文。
+    """
+    answer = await run_in_threadpool(
+        ask_llm, req.question, req.prediction_id, request.app.state.result_store
+    )
+    return {"question": req.question, "answer": answer, "prediction_id": req.prediction_id}
